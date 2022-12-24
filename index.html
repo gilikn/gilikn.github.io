@@ -1,44 +1,58 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="FakeOut: Leveraging Out-of-domain Self-supervision for Multi-modal Video Deepfake Detection.">
-  <meta name="keywords" content="FakeOut, Deepfake, Multi-Modal, Gili Knafo, Gil, Gili, Knafo, MultiModal, Representation Learning, Self Supervision, Self Supervised">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FakeOut: Leveraging Out-of-domain Self-supervision for Multi-modal Video Deepfake Detection</title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-826XCEDYB4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
+    gtag('config', 'G-826XCEDYB4');
   </script>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="/static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="FakeOut, Deepfake, Multi-Modal, Gili Knafo, Gil, Gili, Knafo, MultiModal, Representation Learning, Self Supervision, Self Supervised">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>FakeOut: Leveraging Out-of-domain Self-supervision for Multi-modal Video Deepfake Detection</title>
   <link rel="icon" href="./static/images/fakeout_logo_square.svg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 <body>
 <p></p>
@@ -53,15 +67,15 @@
           <h1 class="title is-2 publication-title">FakeOut: Leveraging Out-of-domain Self-supervision for Multi-modal Video Deepfake Detection</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://gilikn.github.io/gilikn">Gil Knafo</a><sup>1</sup>,
+              <a href="https://gilikn.github.io/gilikn">Gil Knafo,
 			</span>
             <span class="author-block">
-              <a href="https://www.ohadf.com">Ohad Fried</a><sup>1</sup>
+              <a href="https://www.ohadf.com">Ohad Fried</a>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Reichman University</span>
+            <span class="author-block">Reichman University</span>
           </div>
 
           <div class="column has-text-centered">
@@ -120,12 +134,58 @@
 			We demonstrate the efficacy and robustness of FakeOut in detecting various types of deepfakes, especially manipulations which were not seen during training. 
 			Our method achieves state-of-the-art results in cross-manipulation and cross-dataset generalization. 
 			This study shows that, perhaps surprisingly, training on out-of-domain videos (i.e., videos with no speaking humans), can lead to better deepfake detection systems. 
-			Code is available on GitHub.
+			Code is available on <a href="https://github.com/gilikn/FakeOut">GitHub</a>.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+			<h3 class="subtitle has-text-centered">
+			<b>Cross-dataset generalization.</b>
+			Video-level ROC-AUC(%) when fine-tuning on FaceForensics++ and testing on FaceShifter (FSh), DeeperForensics (DFo), Celeb-DF-v2 (CDF)
+			and Deepfake Detection Challenge (DFDC) in its two versions, full and filtered test-set. V, A indicate the usage of video and audio
+			modalities during FakeOut fine-tuning, respectively. Best results are in <b>bold</b>.
+			</h3>
+          <img src="./static/images/cross-dataset.jpg" alt="logo" width=1500/>
+        </div>
+		<div class="item">
+			<h3 class="subtitle has-text-centered">
+			<b>Cross-manipulation generalization.</b>
+			Video-level ROC-AUC(%) when testing on each manipulation method of FaceForensics++, fine-tuning on the remaining three manipulations.
+			Methods are Deepfakes (DF), FaceSwap (FS), Face2Face (F2F) and NeuralTextures (NT).
+			</h3>
+          <img src="./static/images/cross-manipulation.jpg" alt="logo"/>
+        </div>
+		<div class="item">
+			<h3 class="subtitle has-text-centered">
+			  <b>Results regarding dog-mask distractor category.</b>
+			
+				We consider this category of videos as an aggressive post-process, and argue it should be left out of the filtered DFDC test-set. In
+				the table, we report video-level ROC-AUC (%) when fine-tuning on FaceForensics++ and testing on Deepfake Detection Challenge (DFDC)
+				dataset in its two versions, filtered and full test-set, leaving out heavily post-processed examples of dog-mask filter.
+			 </h3>
+          <img src="./static/images/dropping-dog-mask.jpg" alt="logo"/>
+		  <img src="./static/images/dropping-dog-mask-images.jpg" alt="logo"/>
+        </div>
+		<div class="item">
+			<h3 class="subtitle has-text-centered">
+			<b>Intra-dataset evaluation.</b> 
+			We show the video-level performance, in terms of accuracy (%) and ROC-AUC (%), of several approaches, including FakeOut. All models are fine-tuned on the
+			FaceForensics++ train-set and evaluated on the FaceForensics++ test-set.
+			</h3>
+          <img src="./static/images/intra-dataset.jpg" alt="logo" width=1500/>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="section" id="BibTeX">
